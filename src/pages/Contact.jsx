@@ -1,6 +1,9 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 function Contact() {
+  const navigate = useNavigate();
+
   const [form, setForm] = useState({
     name: "",
     email: "",
@@ -23,21 +26,12 @@ function Contact() {
       return;
     }
 
-    alert("Message sent successfully!");
-
-    setForm({
-      name: "",
-      email: "",
-      subject: "",
-      message: "",
-    });
+    // Privacy Policy sahifasiga o'tish
+    navigate("/privacy-policy");
   };
 
   return (
     <section className="bg-white min-h-screen">
-
-      {/* CONTACT */}
-
       <div className="max-w-[1060px] mx-auto px-5 py-8 pb-16 text-center">
 
         {/* Avatar */}
@@ -61,6 +55,7 @@ function Contact() {
           className="w-full max-w-[592px] mx-auto p-[35px_43px_39px] bg-[#f7f8fc] border border-[#2494ff] text-left"
         >
 
+          {/* Name + Email */}
           <div className="grid grid-cols-2 gap-[18px] mb-4">
 
             <div>
@@ -95,6 +90,7 @@ function Contact() {
 
           </div>
 
+          {/* Subject */}
           <div className="grid grid-cols-2 gap-[18px] mb-4">
 
             <div>
@@ -129,6 +125,7 @@ function Contact() {
 
           </div>
 
+          {/* Message */}
           <div>
             <label className="block mb-2 text-[11px] text-black">
               Message
@@ -143,6 +140,7 @@ function Contact() {
             />
           </div>
 
+          {/* Send Button */}
           <button
             type="submit"
             className="mt-[17px] w-[142px] h-9 rounded-full bg-[#292a3b] text-white text-[10px] hover:bg-[#202158] transition"
@@ -152,7 +150,6 @@ function Contact() {
 
         </form>
       </div>
-
     </section>
   );
 }
