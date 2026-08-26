@@ -1,8 +1,20 @@
 {
   "name": "finsweet-figma",
-  "private": true,
   "version": "0.0.0",
+  "private": true,
+  "description": "This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.",
+  "homepage": "https://github.com/gozalkarimjonova/Finsweet-project#readme",
+  "bugs": {
+    "url": "https://github.com/gozalkarimjonova/Finsweet-project/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gozalkarimjonova/Finsweet-project.git"
+  },
+  "license": "ISC",
+  "author": "",
   "type": "module",
+  "main": "vite.config.js",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
