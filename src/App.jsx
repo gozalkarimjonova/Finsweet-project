@@ -49,7 +49,7 @@ function App() {
             path="/privacy-policy"
             element={<PrivacyPolicy />}
           />
-
+                <Route path="/read-blog" element={<ReadBlog/>}/>
           <Route
             path="*"
             element={<NotFound />}
