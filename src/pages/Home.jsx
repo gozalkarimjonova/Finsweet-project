@@ -221,7 +221,7 @@ function Home() {
             <div className="mt-6 grid gap-4">
               <label className="text-[9px] text-white/70">Your name<input className="mt-1 block w-full border-0 border-b border-white/30 bg-transparent py-2 text-[11px] text-white outline-none placeholder:text-white/40 focus:border-white/70" placeholder="Your name" /></label>
               <label className="text-[9px] text-white/70">Email<input className="mt-1 block w-full border-0 border-b border-white/30 bg-transparent py-2 text-[11px] text-white outline-none placeholder:text-white/40 focus:border-white/70" placeholder="Email" /></label>
-              <label className="text-[9px] text-white/70">Paste your Figma design URL<input className="mt-1 block w-full border-0 border-b border-white/30 bg-transparent py-2 text-[11px] text-white outline-none placeholder:text-white/40 focus:border-white/70" placeholder="Provide a link" /></label>
+              <label className="text-[9px] text-white/70">Paste your design URL<input className="mt-1 block w-full border-0 border-b border-white/30 bg-transparent py-2 text-[11px] text-white outline-none placeholder:text-white/40 focus:border-white/70" placeholder="Provide a link" /></label>
               <Link to="/contact" className="mt-1 inline-flex w-max items-center justify-center rounded-full bg-[#FCD980] px-6 py-3 text-[13px] font-semibold text-[#282938]">Get in touch</Link>
             </div>
           </div>
