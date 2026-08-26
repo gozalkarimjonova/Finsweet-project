@@ -1,131 +1,108 @@
 import React from "react";
-import { Link, useParams } from "react-router-dom";
-import boys from "../assets/boys.png";
-import buisness from "../assets/buisness.png";
-import meeting from "../assets/meeting.png";
-import smile from "../assets/smile.png";
-import speking from "../assets/speking.png";
-import submit from "../assets/submit.png";
-import technology from "../assets/technology.png";
-
-const blogData = {
-  1: {
-    title:
-      "A UX Case Study on Creating a Studious Environment for Students",
-    image: boys,
-  },
-
-  2: {
-    title:
-      "How one Webflow user grew his single person consultancy from $0–100K in 14 months",
-    image: buisness,
-  },
-
-  3: {
-    title:
-      "How one Webflow user grew his single person consultancy from $0–100K in 14 months",
-    image: meeting,
-  },
-
-  4: {
-    title:
-      "How one Webflow user grew his single person consultancy from $0–100K in 14 months",
-    image: smile,
-  },
-
-  5: {
-    title:
-      "How one Webflow user grew his single person consultancy from $0–100K in 14 months",
-    image: speking,
-  },
-
-  6: {
-    title:
-      "How one Webflow user grew his single person consultancy from $0–100K in 14 months",
-    image: submit,
-  },
-};
 
 function ReadBlog() {
-  const { id } = useParams();
-
-  const blog = blogData[id] || blogData[1];
-
   return (
-    <main className="w-full min-h-screen bg-white text-[#292d3a] px-5 md:px-10 py-10">
+    <main className="w-full min-h-screen bg-white text-[#292d3a]">
 
-      <div className="max-w-[900px] mx-auto">
+      <section className="max-w-[950px] mx-auto px-5 md:px-10 lg:px-16 py-10">
 
-
-        <Link
-          to="/blog"
-          className="inline-flex items-center gap-2 text-sm text-gray-500 hover:text-violet-600 transition mb-10"
-        >
-          ← Back to Blog
-        </Link>
-
-
-        <div className="text-center">
-
-          <p className="text-[10px] text-gray-500">
-            27 Jan 2021
-          </p>
-
-          <h1 className="text-3xl md:text-5xl font-bold leading-tight mt-4">
-            {blog.title}
+        {/* TITLE */}
+        <div className="max-w-[650px] mx-auto text-center">
+          <h1 className="text-2xl md:text-3xl lg:text-[32px] font-bold leading-tight">
+            A UX Case Study on Creating a
+            <br />
+            Studious Environment for Students
           </h1>
 
-          <p className="text-xs text-gray-500 mt-4">
+          <p className="text-[8px] md:text-[9px] text-gray-500 mt-4">
             Andrew Jonson Posted on 27th January 2021
           </p>
-
         </div>
 
-        <img
-          src={blog.image}
-          alt={blog.title}
-          className="w-full h-[250px] md:h-[450px] object-cover mt-10"
-        />
+        {/* HERO IMAGE */}
+        <div className="w-full mt-8 overflow-hidden">
+          <img
+            src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1200&q=80"
+            alt="Students"
+            className="w-full h-[220px] md:h-[350px] lg:h-[430px] object-cover"
+          />
+        </div>
 
+        {/* ARTICLE */}
+        <article className="max-w-[600px] mx-auto mt-10">
 
-        <article className="max-w-[700px] mx-auto mt-10">
-
-          <h2 className="text-2xl font-bold mb-5">
-            Creating a better experience
+          <h2 className="text-lg md:text-xl font-bold leading-tight">
+            Lorem ipsum dolor sit amet, consectetur
+            <br className="hidden md:block" />
+            adipiscing elit.
           </h2>
 
-          <p className="text-sm text-gray-600 leading-7 mb-6">
-            Apparently we had reached a great height in the atmosphere for the
-            sky was a dead black, and the stars had ceased to twinkle. The
-            environment around us plays an important role in how we think,
-            create and learn.
+          <p className="text-[9px] md:text-[10px] text-gray-500 leading-[1.8] mt-4">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur.
           </p>
 
-          <p className="text-sm text-gray-600 leading-7 mb-6">
-            A good user experience starts with understanding people and
-            creating an environment where people can focus on what matters.
-            Designers need to think about the user's goals, needs and
-            expectations.
-          </p>
-
-          <h2 className="text-2xl font-bold mb-5 mt-10">
-            The importance of good design
+          <h2 className="text-base md:text-lg font-bold mt-8">
+            Ut enim ad minim veniam, quis nostrud.
           </h2>
 
-          <p className="text-sm text-gray-600 leading-7 mb-6">
-            Great design is not only about making something beautiful. It is
-            also about making it useful, simple and accessible. When these
-            elements work together, users feel comfortable and confident.
+          <p className="text-[9px] md:text-[10px] text-gray-500 leading-[1.8] mt-3">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
           </p>
 
-          <p className="text-sm text-gray-600 leading-7">
-            This case study shows how thoughtful design decisions can create a
-            more productive and enjoyable experience for students and teams.
+          {/* LIST */}
+          <ul className="list-disc pl-5 mt-5 space-y-2">
+            <li className="text-[9px] text-gray-500">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </li>
+
+            <li className="text-[9px] text-gray-500">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </li>
+
+            <li className="text-[9px] text-gray-500">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </li>
+          </ul>
+
+          <p className="text-[9px] md:text-[10px] text-gray-500 leading-[1.8] mt-5">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+
+          {/* SECOND IMAGE */}
+          <div className="w-full mt-7 overflow-hidden">
+            <img
+              src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1000&q=80"
+              alt="Business meeting"
+              className="w-full h-[220px] md:h-[320px] lg:h-[360px] object-cover"
+            />
+          </div>
+
+          <h2 className="text-base md:text-lg font-bold mt-8">
+            Ut enim ad minim veniam, quis nostrud.
+          </h2>
+
+          <p className="text-[9px] md:text-[10px] text-gray-500 leading-[1.8] mt-3 pb-16">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur.
           </p>
 
         </article>
-
-      </div>
+      </section>
 
     </main>
   );
