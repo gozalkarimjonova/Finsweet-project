@@ -44,6 +44,7 @@ function App() {
             path="/case-study"
             element={<ReadCase />}
           />
+          <Route path="/read-blog/:id" element={<ReadBlog />} />
 
           <Route
             path="/privacy-policy"
